@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.3",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.3_OTA_FINAL.zip",
-  "sha256": "405f5bd7ebe25d071b40cd411f63fb6ae1ea8d96199897b5101f47b900dbe7d6",
-  "notes": "UI kaynak temizliği: başlangıçtaki eski presetler, Leading/Tracking ve manuel bölme kilidi kaldırıldı. GÖRÜNÜM dört ana satırı, GELİŞMİŞ ve iş akışı korunur."
+  "version": "6.6.4",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.4_OTA_FINAL.zip",
+  "sha256": "a05b10740805d0e609fb01209e2f503df09d94d5f62213e14a5fe88ac29ec459",
+  "notes": "v6.6.3 arayüz temizliği korunarak OTA manifest ve ZIP isteklerine cache-busting eklendi; eski manifest önbelleği nedeniyle güncellemenin takılması düzeltildi."
 }
