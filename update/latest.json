@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.15",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.15_OTA_FINAL.zip",
-  "sha256": "1f27a1875219715b9b9eb93dd5781db24a0ff3473292be0537f3322d6a257a04",
-  "notes": "Arayüzün denetçi bölümleri Görünüm ile tutarlı hale getirildi; altyazı kanalında eklenti dışı klipler için güvenli yazma koruması eklendi."
+  "version": "6.6.16",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.16_OTA_FINAL.zip",
+  "sha256": "0ec6b3164e7d563fe965e4beaaa486a11d72ddca40c10b21704e92af77f7f770",
+  "notes": "Tüm menülerin kontrolleri modernleştirildi; yazı tipi seçicisi genişletildi ve Mac'teki fontlar otomatik ekleniyor."
 }

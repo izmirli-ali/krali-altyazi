@@ -63,6 +63,9 @@ if (version === '6.6.3') {
 }
 
 expect('shared Canvas renderer preserved', app.includes('function k31draw(ctx,W,H,text)'));
+expect('font selector has safe broad fallback and system scan',
+  app.includes('var curated=[') && app.includes('tell application "System Events" to get name of every font')
+);
 expect('timeline writer preserved', host.includes('writeKraliTextTrackV50=function(payloadJSON)'));
 const v50writer = host.slice(host.indexOf('writeKraliTextTrackV50=function(payloadJSON)'));
 expect('timeline user-clip safety guard',
