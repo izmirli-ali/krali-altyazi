@@ -64,6 +64,12 @@ if (version === '6.6.3') {
 
 expect('shared Canvas renderer preserved', app.includes('function k31draw(ctx,W,H,text)'));
 expect('timeline writer preserved', host.includes('writeKraliTextTrackV50=function(payloadJSON)'));
+const v50writer = host.slice(host.indexOf('writeKraliTextTrackV50=function(payloadJSON)'));
+expect('timeline user-clip safety guard',
+  host.includes('_v50IsOwnedClip=function(clip)') &&
+  v50writer.includes('Güvenlik için işlem durduruldu') &&
+  v50writer.indexOf('Güvenlik için işlem durduruldu') < v50writer.indexOf('slot.track.clips[i].remove(false,false)')
+);
 expect('ASR export preserved', host.includes('exportAsMediaDirect') && app.includes('whisper-cli'));
 
 console.log('\nKRALI appearance release guard tamamlandı.');

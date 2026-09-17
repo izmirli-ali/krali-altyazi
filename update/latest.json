@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.14",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.14_OTA_FINAL.zip",
-  "sha256": "4b9387f06eba04e6911eb2cd29ed0ea139fd13a34d3668780189319cbd3e83da",
-  "notes": "GÖRÜNÜM renk seçicisine HEX giriş alanı ve hızlı palet eklendi."
+  "version": "6.6.15",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.15_OTA_FINAL.zip",
+  "sha256": "1f27a1875219715b9b9eb93dd5781db24a0ff3473292be0537f3322d6a257a04",
+  "notes": "Arayüzün denetçi bölümleri Görünüm ile tutarlı hale getirildi; altyazı kanalında eklenti dışı klipler için güvenli yazma koruması eklendi."
 }
