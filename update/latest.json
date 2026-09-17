@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.1",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.1_OTA_FINAL.zip",
-  "sha256": "045657b0e84605a74728e3ed06f1c1a26e87bed66e07b33b45dea69184fcb894",
-  "notes": "GÖRÜNÜM ana satırları authoritative DOM ile düzeltildi; updater durum mesajı düzeltildi. İlk gerçek OTA testi."
+  "version": "6.6.2",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.2_OTA_FINAL.zip",
+  "sha256": "a1ad7c701a561cac9f8a90c46e9ad17a2c18f3ec0bfd68c7082e79e4393a71a8",
+  "notes": "GÖRÜNÜM ana satırlarının ikinci rebuild sırasında inputları silmesi düzeltildi. Dört satır idempotent kurulur; GELİŞMİŞ ve mevcut iş akışı korunur."
 }

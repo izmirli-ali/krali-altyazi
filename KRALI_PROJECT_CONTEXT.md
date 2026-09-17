@@ -206,7 +206,7 @@ Backups/update working area is under:
 
 **Runtime proof:** v6.6 automatically downloaded/applied v6.6.1 and the Premiere panel reopened showing `KRALİ - ALTYAZI v6.6.1`.
 
-Current stable manifest points to v6.6.1 package in the public repo.
+Current stable manifest points to the v6.6.2 release candidate package. v6.6.2 is statically validated and OTA-ready, but Premiere runtime acceptance is still pending.
 
 Do not break the OTA mechanism while fixing UI. Future releases should update package + SHA-256 + `update/latest.json`.
 
@@ -228,14 +228,19 @@ Do not say “fixed” based only on static checks.
 
 ## 12. Immediate next task
 
-Create **v6.6.2** with only these goals:
+**v6.6.2 implementation/package/OTA preparation is complete; Premiere runtime acceptance is pending.**
 
-1. Fix the missing controls in the four GÖRÜNÜM main rows.
-2. Keep exact intended row layout and no main-row sliders.
-3. Preserve `GELİŞMİŞ` unchanged.
-4. Preserve all current layout/workflow behavior.
-5. Preserve OTA updater.
-6. Publish through OTA and have the user verify in Premiere.
+Root cause: the v6.6.1 authoritative appearance `rebuild()` cleared `#krali661main` on its delayed second pass after the original controls had been moved into that container. This deleted the controls, so only newly created labels remained.
+
+v6.6.2 builds replacement rows in a `DocumentFragment` first, moving the original inputs to safety before clearing/replacing the container. Repeated rebuilds therefore preserve the same input nodes, IDs and event bindings.
+
+Runtime verification checklist:
+
+1. Confirm OTA installs and panel header shows v6.6.2.
+2. Confirm all four GÖRÜNÜM rows show checkbox + color, and values `3 / 75 / 8` where applicable.
+3. Confirm there are no sliders in the four main rows.
+4. Confirm `GELİŞMİŞ` remains unchanged.
+5. Confirm changing each main-row control updates preview and `KRALI ALTYAZI` output as before.
 
 After v6.6.2 passes runtime UI verification, freeze this UI and move to functional improvements rather than more visual redesign.
 
