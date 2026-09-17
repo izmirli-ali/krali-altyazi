@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.6",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.6_OTA_FINAL.zip",
-  "sha256": "877e10c0b85594be2231592ace03f7a4165512f670dd2639206e663e5a540b42",
-  "notes": "İç içe kalan eski boş GÖRÜNÜM satırları da gizlendi; tek authoritative dört satır görünümü sağlandı."
+  "version": "6.6.7",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.7_OTA_FINAL.zip",
+  "sha256": "d1b0324c990677f3791deb1160d85213dfdc8968afa8b11487b90e2ea3c0d84d",
+  "notes": "Eski boş GÖRÜNÜM satırları CSS seviyesinde de gizlendi; authoritative dört satır tek görünür grup olarak bırakıldı."
 }
