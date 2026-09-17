@@ -26,12 +26,13 @@ function expect(name, condition) {
 
 const files = list();
 const root = files.find(x => /index\.html$/.test(x)).replace(/index\.html$/, '');
+const version = (path.basename(root.replace(/\/$/, '')).match(/v(\d+\.\d+\.\d+)/i) || [])[1];
 const html = read(`${root}index.html`);
 const css = read(`${root}style.css`);
 const app = read(`${root}js/app.js`);
 const host = read(`${root}jsx/host.jsx`);
 
-expect('v6.6.2 package identity', html.includes('KRALİ - ALTYAZI v6.6.2') && app.includes('version:"6.6.2"'));
+expect('package identity', !!version && html.includes(`KRALİ - ALTYAZI v${version}`) && app.includes(`version:"${version}"`));
 
 const requiredInputs = [
   'k26FillOn', 'k26Fill',
@@ -54,6 +55,12 @@ expect('controls move before container cleanup',
   app.indexOf('var rows=document.createDocumentFragment()') < app.indexOf('box.innerHTML="";box.appendChild(rows)')
 );
 expect('advanced section remains separate', app.includes('master.innerHTML=\'<summary>GELİŞMİŞ <span>›</span></summary>'));
+
+if (version === '6.6.3') {
+  expect('legacy initial presets removed', !html.includes('class="k27-presets"'));
+  expect('Leading and Tracking controls removed', !html.includes('id="k26Lead"') && !html.includes('id="k26Track"'));
+  expect('manual split lock removed', !app.includes('Manuel bölmeyi kilitle'));
+}
 
 expect('shared Canvas renderer preserved', app.includes('function k31draw(ctx,W,H,text)'));
 expect('timeline writer preserved', host.includes('writeKraliTextTrackV50=function(payloadJSON)'));

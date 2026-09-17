@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.2",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.2_OTA_FINAL.zip",
-  "sha256": "a1ad7c701a561cac9f8a90c46e9ad17a2c18f3ec0bfd68c7082e79e4393a71a8",
-  "notes": "GÖRÜNÜM ana satırlarının ikinci rebuild sırasında inputları silmesi düzeltildi. Dört satır idempotent kurulur; GELİŞMİŞ ve mevcut iş akışı korunur."
+  "version": "6.6.3",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.3_OTA_FINAL.zip",
+  "sha256": "405f5bd7ebe25d071b40cd411f63fb6ae1ea8d96199897b5101f47b900dbe7d6",
+  "notes": "UI kaynak temizliği: başlangıçtaki eski presetler, Leading/Tracking ve manuel bölme kilidi kaldırıldı. GÖRÜNÜM dört ana satırı, GELİŞMİŞ ve iş akışı korunur."
 }

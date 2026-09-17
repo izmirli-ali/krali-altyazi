@@ -206,7 +206,7 @@ Backups/update working area is under:
 
 **Runtime proof:** v6.6 automatically downloaded/applied v6.6.1 and the Premiere panel reopened showing `KRALİ - ALTYAZI v6.6.1`.
 
-Current stable manifest points to the v6.6.2 release candidate package. v6.6.2 is statically validated and OTA-ready, but Premiere runtime acceptance is still pending.
+Current stable manifest points to the v6.6.3 release candidate package. v6.6.3 keeps the v6.6.2 idempotent appearance-row repair and removes obsolete initial UI controls (legacy presets, Leading/Tracking, manual split lock) from the source DOM. Premiere runtime acceptance is still pending.
 
 Do not break the OTA mechanism while fixing UI. Future releases should update package + SHA-256 + `update/latest.json`.
 
@@ -228,7 +228,7 @@ Do not say “fixed” based only on static checks.
 
 ## 12. Immediate next task
 
-**v6.6.2 implementation/package/OTA preparation is complete; Premiere runtime acceptance is pending.**
+**v6.6.2 appearance repair and v6.6.3 source-DOM cleanup are implementation/package/OTA-ready; Premiere runtime acceptance is pending.**
 
 Root cause: the v6.6.1 authoritative appearance `rebuild()` cleared `#krali661main` on its delayed second pass after the original controls had been moved into that container. This deleted the controls, so only newly created labels remained.
 
@@ -236,7 +236,7 @@ v6.6.2 builds replacement rows in a `DocumentFragment` first, moving the origina
 
 Runtime verification checklist:
 
-1. Confirm OTA installs and panel header shows v6.6.2.
+1. Confirm OTA installs and panel header shows v6.6.3.
 2. Confirm all four GÖRÜNÜM rows show checkbox + color, and values `3 / 75 / 8` where applicable.
 3. Confirm there are no sliders in the four main rows.
 4. Confirm `GELİŞMİŞ` remains unchanged.
