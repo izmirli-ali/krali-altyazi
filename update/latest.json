@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.12",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.12_OTA_FINAL.zip",
-  "sha256": "0733ab2c6db9e0a47f7c70dec97d3e8750efeed5cfe486015e4605c55b94b3eb",
-  "notes": "GÖRÜNÜM bölümündeki renk kutuları Premiere CEP içinde yeniden etkileşimli hale getirildi."
+  "version": "6.6.13",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.13_OTA_FINAL.zip",
+  "sha256": "6f28124eb098a15e24497e02b285384704ac32ea8f44fee5780f1c452a086641",
+  "notes": "GÖRÜNÜM renk kutularına CEP içinde açılan RGB seçici eklendi."
 }
