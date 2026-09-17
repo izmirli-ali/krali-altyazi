@@ -1,8 +1,8 @@
 {
   "channel": "stable",
-  "enabled": false,
-  "version": "6.6.0",
-  "url": "",
-  "sha256": "",
-  "notes": "AUTO UPDATE kanalı hazır. İlk paket yayınlanınca etkinleştirilecek."
+  "enabled": true,
+  "version": "6.6.1",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.1_OTA_FINAL.zip",
+  "sha256": "045657b0e84605a74728e3ed06f1c1a26e87bed66e07b33b45dea69184fcb894",
+  "notes": "GÖRÜNÜM ana satırları authoritative DOM ile düzeltildi; updater durum mesajı düzeltildi. İlk gerçek OTA testi."
 }
