@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.13",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.13_OTA_FINAL.zip",
-  "sha256": "6f28124eb098a15e24497e02b285384704ac32ea8f44fee5780f1c452a086641",
-  "notes": "GÖRÜNÜM renk kutularına CEP içinde açılan RGB seçici eklendi."
+  "version": "6.6.14",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.14_OTA_FINAL.zip",
+  "sha256": "4b9387f06eba04e6911eb2cd29ed0ea139fd13a34d3668780189319cbd3e83da",
+  "notes": "GÖRÜNÜM renk seçicisine HEX giriş alanı ve hızlı palet eklendi."
 }
