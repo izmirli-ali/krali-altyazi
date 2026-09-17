@@ -228,7 +228,7 @@ Do not say “fixed” based only on static checks.
 
 ## 12. Immediate next task
 
-**v6.6.2 appearance repair, v6.6.3 source-DOM cleanup, v6.6.4 OTA cache-busting, v6.6.5 duplicate-row/toggle cleanup, v6.6.6 nested-row cleanup, v6.6.7 CSS legacy-row suppression and v6.6.8 first-load suppression are implementation/package/OTA-ready; Premiere runtime acceptance is pending.**
+**v6.6.2 appearance repair, v6.6.3 source-DOM cleanup, v6.6.4 OTA cache-busting, v6.6.5 duplicate-row/toggle cleanup, v6.6.6 nested-row cleanup, v6.6.7 CSS legacy-row suppression, v6.6.8 first-load suppression and v6.6.9 deterministic legacy-group isolation are implementation/package/OTA-ready; Premiere runtime acceptance is pending.**
 
 Root cause: the v6.6.1 authoritative appearance `rebuild()` cleared `#krali661main` on its delayed second pass after the original controls had been moved into that container. This deleted the controls, so only newly created labels remained.
 
@@ -236,7 +236,7 @@ v6.6.2 builds replacement rows in a `DocumentFragment` first, moving the origina
 
 Runtime verification checklist:
 
-1. Confirm OTA installs and panel header shows v6.6.8.
+1. Confirm OTA installs and panel header shows v6.6.9.
 2. Confirm all four GÖRÜNÜM rows show checkbox + color, and values `3 / 75 / 8` where applicable.
 3. Confirm there are no sliders in the four main rows.
 4. Confirm `GELİŞMİŞ` remains unchanged.

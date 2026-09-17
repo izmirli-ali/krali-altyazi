@@ -1,0 +1,13 @@
+KRALI ALTYAZI v6.6.9 OTA FINAL
+- GÖRÜNÜM ana dört satırı tekrar çalıştırmalarda kontrolleri silmeyen idempotent authoritative DOM container olarak kurulur.
+- Input ID'leri taşınır; mevcut renderer/event bağlantıları korunur.
+- Ana satırlarda slider yoktur.
+- GELİŞMİŞ alanına dokunulmaz.
+- Updater disabled manifest durumunda artık 'Güncel' mesajına geçer.
+- v6.6.3: Başlangıçtaki eski presetler, Leading/Tracking ve manuel bölme kilidi kaynak DOM'dan kaldırıldı.
+- v6.6.4: OTA manifest ve ZIP isteklerine cache-busting eklendi.
+- v6.6.5: Eski GÖRÜNÜM kapsayıcısının boş satırları gizlendi; dar panelde önizleme düğmesi taşması düzeltildi.
+- v6.6.6: İç içe kalan eski boş görünüm satırları da gizlendi.
+- v6.6.7: Eski görünüm satırları CSS seviyesinde de gizlendi; authoritative satırlar tek görünür grup olarak bırakıldı.
+- v6.6.9: Authoritative GÖRÜNÜM satırları kurulana kadar eski appearance gövdesi görünmez.
+- OTA updater version: 6.6.9.

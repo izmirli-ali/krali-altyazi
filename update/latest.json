@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.8",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.8_OTA_FINAL.zip",
-  "sha256": "a1c11fd80125ee2d9ab1f8a6c3f0f0a40141da1333f812dfedeed3ef643a9e0a",
-  "notes": "Authoritative GÖRÜNÜM satırları kurulana kadar eski appearance gövdesi görünmez; ilk yükleme flicker'ı engellendi."
+  "version": "6.6.9",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.9_OTA_FINAL.zip",
+  "sha256": "2a0751040b9c1bf13239b53660a095680494f22ba5ef939511f95d8c74adb743",
+  "notes": "GÖRÜNÜM eski satır grubunu deterministik olarak ayırır; authoritative dört satır görünürlük ve ilk yükleme sırası düzeltildi."
 }

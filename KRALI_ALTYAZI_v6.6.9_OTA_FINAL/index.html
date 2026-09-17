@@ -1,0 +1,117 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KRALİ - ALTYAZI v6.6.9</title><link rel="stylesheet" href="style.css">
+<style>
+.krali-live-host{position:relative!important;overflow:hidden!important}
+#kraliVideo{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#111;z-index:1;
+filter:none!important;opacity:1!important;visibility:visible!important}
+#kraliCaption{position:absolute;left:6%;right:6%;bottom:11%;z-index:3;text-align:center;color:#fff;
+font:700 26px/1.18 Arial,sans-serif;text-shadow:0 2px 7px #000,0 0 3px #000;pointer-events:none}
+#kraliDiag{position:absolute;left:8px;right:8px;top:8px;z-index:20;padding:8px 10px;border-radius:6px;
+background:rgba(0,0,0,.88);font:10px/1.25 Arial,sans-serif;color:#bbb;white-space:pre-wrap;pointer-events:none}
+
+/* v1.2 transcript follow viewport */
+#captions{max-height:42vh;overflow-y:auto;scroll-behavior:smooth;padding-right:4px}
+#captions .cue{transition:opacity .16s ease,transform .16s ease}
+#captions .cue.active{transform:translateX(2px)}
+#clock{font-variant-numeric:tabular-nums;min-width:92px}
+.cue time{font-variant-numeric:tabular-nums;white-space:nowrap}
+#kraliRefreshPreview{margin-left:6px;white-space:nowrap}</style></head><body class="kraliBooting">
+<header><div><b>KRALİ - ALTYAZI v6.6.9</b><small id="seq">Sequence okunuyor…</small></div><button id="reload" title="Paneli yenile">↻</button></header>
+<section class="setup"><div class="topControls">
+<label>Ses<select id="track"></select></label>
+<label>Dil<select id="lang"><option value="tr">Türkçe</option><option value="auto">Otomatik</option><option value="en">English</option></select></label>
+<label>Kalite<select id="quality"><option value="fast">Hızlı</option><option value="quality">Kaliteli</option></select></label>
+</div>
+<button id="generate" class="primary">ALTYAZI OLUŞTUR</button><progress id="progress" class="hidden" max="100" value="0"></progress>
+<div class="engineCard"><span id="engineDot"></span><div class="engineText"><b id="engineTitle">Transkripsiyon motoru kontrol ediliyor…</b><small id="engineDetail">Yerel motor</small></div><button id="installEngine" class="miniInstall hidden">MOTORU KUR</button></div><div class="hint" id="engine">v6.6.9 · Word-Sync Editor · Program Monitor</div></section>
+<div class="k26-sectionTitle"><b>Altyazı Düzenleyici</b><span>Canlı sequence önizleme</span></div>
+
+<main>
+<div id="textTab" class="pane">
+ <div class="k26-workspace"><div id="preview" class="preview">
+<div id="kraliFixedPreviewWrap" style="margin:0;width:100%;height:100%">
+  <div id="kraliPreview" style="position:relative;width:100%;height:100%;overflow:hidden;border:1px solid #444;border-radius:12px;background:#080808">
+    <video id="kraliVideoFixed" playsinline preload="metadata" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#080808"></video>
+    
+<div id="kraliTextZones" class="textZones"></div><div id="kraliMainSafe" class="safeGuides">
+  <div class="safeTitle"></div><div class="safeAction"></div>
+</div><img id="kraliTimelineFrame" alt="" style="display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#080808;z-index:2"><canvas id="k31CaptionCanvas" aria-hidden="true"></canvas>
+    <div id="kraliHybridBadge" style="display:none;position:absolute;right:10px;bottom:10px;z-index:8;padding:4px 7px;border-radius:6px;background:rgba(0,0,0,.72);color:#ddd;font:10px/1.2 sans-serif;pointer-events:none">SOURCE PLAY</div>
+    <div id="kraliCaptionFixed" style="position:absolute;left:8%;right:8%;bottom:12%;z-index:4;text-align:center;font-size:28px;font-weight:800;line-height:1.05;color:#fff;text-shadow:0 2px 5px #000;pointer-events:none"></div>
+    <div id="kraliStatus" style="display:none;position:absolute;left:10px;right:10px;top:10px;z-index:9;padding:8px 10px;border-radius:7px;background:rgba(0,0,0,.88);border:1px solid #555;color:#9fe3a8;font:12px/1.35 monospace;white-space:pre-wrap">BOOT: HTML preview stage hazır</div>
+    
+  </div>
+</div>
+<div class="safe"><div class="caption" id="captionPreview"></div></div></div><aside class="k26-inspector" id="k26Inspector">
+<header class="v631reset"><button id="k26Reset" title="Stili sıfırla">↺</button></header>
+<div class="k26-group"><div class="k26-gtitle">TEXT</div>
+<label class="k26-font"><span>Font</span><select id="k26Font"><option>Helvetica Neue</option><option>Arial</option><option>Arial Black</option><option>Georgia</option></select></label>
+<div class="k26-nums"><label>Boyut<input id="k26Size" type="number" value="48"></label></div>
+<div class="k26-seg" id="k26Align"><button data-v="left">Sol</button><button data-v="center" class="on">Orta</button><button data-v="right">Sağ</button></div>
+<div class="k26-checks"><label><input id="k26Bold" type="checkbox" checked> Kalın</label><label><input id="k26Italic" type="checkbox"> İtalik</label></div>
+</div>
+<div class="k26-group"><div class="k26-gtitle">APPEARANCE</div>
+<div class="k26-prop kraliAppearanceRow"><label><input id="k26FillOn" type="checkbox" checked><span>Dolgu</span></label><input id="k26Fill" type="color" value="#ffffff"><span class="kraliAppearanceSpacer"></span></div>
+<div class="k26-prop kraliAppearanceRow"><label><input id="k26StrokeOn" type="checkbox" checked><span>Kontur</span></label><input id="k26Stroke" type="color" value="#000000"><input id="k26StrokeW" type="number" value="3"></div>
+<div class="k26-prop kraliAppearanceRow"><label><input id="k26BgOn" type="checkbox"><span>Arka Plan</span></label><input id="k26Bg" type="color" value="#000000"><input id="k26BgOp" type="number" value="75"></div>
+<div class="k26-prop kraliAppearanceRow"><label><input id="k26ShadowOn" type="checkbox"><span>Gölge</span></label><input id="k26Shadow" type="color" value="#000000"><input id="k26ShadowBlur" type="number" value="8"></div>
+</div>
+<div class="k26-group"><div class="k26-gtitle">ALIGN & TRANSFORM</div>
+<div class="k26-zone" id="k26Zone"><button data-z="tl"></button><button data-z="tc"></button><button data-z="tr"></button><button data-z="ml"></button><button data-z="mc"></button><button data-z="mr"></button><button data-z="bl"></button><button data-z="bc" class=on></button><button data-z="br"></button></div>
+<div class="k26-nums"><label>X<input id="k26X" type="number" value="0"></label><label>Y<input id="k26Y" type="number" value="0"></label><label>Width<input id="k26Width" type="number" value="70"></label></div>
+</div>
+</aside></div></div>
+ <div class="playline"><button id="play" title="Seçili altyazıya git">▶ Oynat</button><button id="kraliRefreshPreview" title="Sequence preview önbelleğini yenile">↻ Preview</button><input id="scrub" type="range" min="0" max="1000" value="0"><span id="clock">00:00</span></div>
+ <div class="captionRules">
+<label>Otomatik gruplama<select id="groupMode"><option value="natural">Doğal cümle</option><option value="short">Kısa / Reels</option><option value="words">Kelime grubu</option></select></label>
+<label id="wordLimitLabel" class="hidden">Kelime / altyazı<input id="wordLimit" type="number" min="1" max="12" value="4"></label>
+</div>
+<div class="rowhead"><b>Tüm Metinler</b><span id="count"></span></div><div class="splitHint"><b>Enter</b> = altyazıyı böl · Satır başında <b>Backspace/Delete</b> = üsttekiyle birleştir</div>
+ <div id="captions"></div>
+</div>
+<div id="styleTab" class="pane hidden">
+ <div class="styleLiveCard">
+  <div class="styleLiveHead"><b>Canlı önizleme</b><span>Title / Action Safe</span></div>
+  <div id="preview2" class="preview mini styleLivePreview">
+    <img id="kraliStyleFrame" alt="">
+    <div id="kraliStyleZones" class="textZones"></div><div class="safeGuides"><div class="safeTitle"></div><div class="safeAction"></div></div>
+    <div class="caption" id="captionPreview2"></div>
+  </div>
+</div>
+<div class="stylePresetBar">
+ <button type="button" data-style-preset="clean">Temiz</button>
+ <button type="button" data-style-preset="reels">Reels</button>
+ <button type="button" data-style-preset="boxed">Kutulu</button>
+ <button type="button" data-style-preset="minimal">Minimal</button>
+</div>
+ <div class="sectionTitle">Yazı</div>
+ <label>Font<select id="font"></select></label>
+ <div class="grid"><label>Premiere Font Size<input id="size" type="range" min="10" max="400" value="100"><output id="sizeOut">100</output></label><label>Satır yüksekliği<input id="lineHeight" type="range" min="70" max="180" value="105"><output id="lineHeightOut">105%</output></label></div>
+ <div class="grid"><label>Harf aralığı<input id="tracking" type="range" min="-10" max="40" value="0"><output id="trackingOut">0</output></label><label>Maks. genişlik<input id="maxWidth" type="range" min="30" max="95" value="82"><output id="maxWidthOut">82%</output></label></div>
+ <div class="grid colors"><label>Yazı rengi<input id="color" type="color" value="#ffffff"></label><label>Kontur<input id="stroke" type="color" value="#000000"></label></div>
+ <label class="kraliSwitchRow">Kontur <input id="enableStroke" class="kraliSwitch" type="checkbox" checked></label>
+ <label>Kontur kalınlığı<input id="strokeWidth" type="range" min="0" max="20" value="0"><output id="strokeWidthOut">0</output></label>
+ <div class="toggles"><button id="bold" class="toggle on"><b>B</b></button><button id="italic" class="toggle"><i>I</i></button><button id="upper" class="toggle">ABC</button><button class="align toggle" data-align="left">≡←</button><button class="align toggle on" data-align="center">≡</button><button class="align toggle" data-align="right">→≡</button></div>
+ <div class="sectionTitle">Arka kutu</div>
+ <label class="kraliSwitchRow">Arka kutu <input id="enableBg" class="kraliSwitch" type="checkbox" checked></label>
+ <div class="grid colors"><label>Kutu rengi<input id="bg" type="color" value="#000000"></label><label>Opaklık<input id="opacity" type="range" min="0" max="100" value="78"><output id="opacityOut">78%</output></label></div>
+ <div class="grid"><label>Yatay boşluk<input id="padX" type="range" min="0" max="80" value="24"><output id="padXOut">24</output></label><label>Dikey boşluk<input id="padY" type="range" min="0" max="50" value="12"><output id="padYOut">12</output></label></div>
+ <label>Kutu yuvarlaklığı<input id="radius" type="range" min="0" max="80" value="18"><output id="radiusOut">18</output></label>
+ <div class="sectionTitle">Önizleme kalibrasyonu</div>
+ <label>Premiere ölçeği<input id="previewScale" type="range" min="50" max="160" value="100"><output id="previewScaleOut">100%</output></label>
+ <div class="hint">Panel önizlemesini Premiere Caption görünümüne yaklaştırır; altyazı zamanlarını değiştirmez.</div>
+ <div class="sectionTitle">Gölge & konum</div>
+ <label class="kraliSwitchRow">Gölge <input id="enableShadow" class="kraliSwitch" type="checkbox" checked></label>
+ <div class="grid"><label>Gölge<input id="shadow" type="range" min="0" max="100" value="35"><output id="shadowOut">35%</output></label><label>Gölge bulanıklığı<input id="shadowBlur" type="range" min="0" max="50" value="12"><output id="shadowBlurOut">12</output></label></div>
+ <label>Dikey konum<input id="pos" type="range" min="5" max="95" value="78"><output id="posOut">78%</output></label>
+ <label>Yatay konum<input id="posX" type="range" min="10" max="90" value="50"><output id="posXOut">50%</output></label>
+ <button id="applyAll" class="secondary">TÜMÜNE UYGULA</button>
+</div>
+</main>
+<footer>
+ <span id="status">Hazır.</span>
+ <div class="exportActions">
+  <button id="add" disabled>KRALİ TRACK'İ GÜNCELLE</button>
+ </div>
+</footer>
+<script src="lib/CSInterface.js"></script><script src="js/app.js"></script></body></html>
