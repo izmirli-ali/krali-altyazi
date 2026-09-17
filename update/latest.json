@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.4",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.4_OTA_FINAL.zip",
-  "sha256": "a05b10740805d0e609fb01209e2f503df09d94d5f62213e14a5fe88ac29ec459",
-  "notes": "v6.6.3 arayüz temizliği korunarak OTA manifest ve ZIP isteklerine cache-busting eklendi; eski manifest önbelleği nedeniyle güncellemenin takılması düzeltildi."
+  "version": "6.6.5",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.5_OTA_FINAL.zip",
+  "sha256": "f04c0c8fd3c4064617813e1690a5a77bd51c31e0f10ea548dc989ffa3cd15a49",
+  "notes": "Eski GÖRÜNÜM kapsayıcısının boş satırları gizlendi; dar panelde önizleme düğmesi taşması düzeltildi. v6.6.4 cache-busting korunur."
 }
