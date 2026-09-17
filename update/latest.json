@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.9",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.9_OTA_FINAL.zip",
-  "sha256": "2a0751040b9c1bf13239b53660a095680494f22ba5ef939511f95d8c74adb743",
-  "notes": "GÖRÜNÜM eski satır grubunu deterministik olarak ayırır; authoritative dört satır görünürlük ve ilk yükleme sırası düzeltildi."
+  "version": "6.6.11",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.11_OTA_FINAL.zip",
+  "sha256": "54c150ac8e967ea869c45d8e5c30cfd7ea10aa9190d0b28a06f3ea00d78f0fe7",
+  "notes": "Toplu UI güncellemesi: GÖRÜNÜM hizalama, geniş font listesi, preview/timeline font senkronu ve preset iyileştirmeleri."
 }
