@@ -66,6 +66,9 @@ expect('shared Canvas renderer preserved', app.includes('function k31draw(ctx,W,
 expect('font selector has safe broad fallback and system scan',
   app.includes('var curated=[') && app.includes('tell application "System Events" to get name of every font')
 );
+expect('quality and delivery center preserved',
+  app.includes('id="v617delivery"') && app.includes('data-out="vtt"') && app.includes('format:"krali-project"')
+);
 expect('timeline writer preserved', host.includes('writeKraliTextTrackV50=function(payloadJSON)'));
 const v50writer = host.slice(host.indexOf('writeKraliTextTrackV50=function(payloadJSON)'));
 expect('timeline user-clip safety guard',

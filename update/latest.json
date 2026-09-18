@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.16",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.16_OTA_FINAL.zip",
-  "sha256": "0ec6b3164e7d563fe965e4beaaa486a11d72ddca40c10b21704e92af77f7f770",
-  "notes": "Tüm menülerin kontrolleri modernleştirildi; yazı tipi seçicisi genişletildi ve Mac'teki fontlar otomatik ekleniyor."
+  "version": "6.6.17",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.17_OTA_FINAL.zip",
+  "sha256": "480d62a90bef6c535fb12356c0f1b831f5d1d120c539c657273777becab9ba89",
+  "notes": "Kalite & Teslim merkezi eklendi: kalite raporu, VTT/TXT/CSV çıktıları, taşınabilir proje paketi ve font doğrulaması."
 }
