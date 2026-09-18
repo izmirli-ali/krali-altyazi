@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.39",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.39_CLIP_CLOCK.zip",
-  "sha256": "6feab7b7d85e455b7e5fbb71a87b2de8651dc156389ef5cd71c5f6cee7d57eab",
-  "notes": "Boşluklu timeline klipleri için kaynak-zamanlı altyazı eşlemesi: her kelime ilgili klibin gerçek Premiere başlangıcına yerleştirilir."
+  "version": "6.6.40",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.40_SPEECH_CLOCK.zip",
+  "sha256": "29e0c5ad01b48397a368862ef07fc541efcfd2ae8bd86ccd15f25603b52fd37d",
+  "notes": "Tek parça kayıtlar ve kesilmiş timeline klipleri için sessizlik-korumalı altyazı saati: atlanan iç sessizlikler gerektiğinde kelime zamanlarına geri eklenir."
 }
