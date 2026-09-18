@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.23",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.23_OTA_FINAL.zip",
-  "sha256": "a6d5f5cb2c9a6c78e1d0ed69cbb3294b71f1b3db24dd23578c34cb464305a195",
-  "notes": "Sessizlik Kes, kendi yalıtılmış host motoruna bağlanacak şekilde düzeltildi."
+  "version": "6.6.24",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.24_OTA_FINAL.zip",
+  "sha256": "7e213fbc73196ddd8e46b4f14c97bb1b4d562edb0ff43ec63efd1b52ceb1cd07",
+  "notes": "Altyazı Stili animasyonları ile Sessizlik Kes güvenlik, profil ve işlem raporu kontrolleri eklendi."
 }
