@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.18",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.18_OTA_FINAL.zip",
-  "sha256": "8442eef9836866d26d347b1fe32e69fab70e9737563aa470486684155856e89d",
-  "notes": "Altyazı sisteminden izole Sessizlik Kes modülü eklendi: yerel ses analizi, kesim planı ve yalnızca güvenli KRALI sequence kopyasında ripple kesim."
+  "version": "6.6.19",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.19_OTA_FINAL.zip",
+  "sha256": "987aa9d430efe6faa8deca8b75370f07da3ed49c3f5b0f5b8c105c0496da5f4f",
+  "notes": "Sessizlik Kes artık bağımsız çalışma alanı olarak açılır; JSON kesim aktarımı düzeltildi, kesim aralığı ve manuel dB kontrolleri eklendi."
 }
