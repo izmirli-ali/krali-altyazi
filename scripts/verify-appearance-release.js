@@ -35,7 +35,7 @@ const silenceShell = read(`${root}js/modules/silence-cut.js`);
 const silenceApp = read(`${root}modules/silence-cut/js/app.js`);
 const silenceHost = read(`${root}modules/silence-cut/jsx/host.jsx`);
 
-expect('package identity', !!version && html.includes(`KRALİ - ALTYAZI v${version}`) && app.includes(`version:"${version}"`));
+expect('package identity', !!version && html.includes(`KRALİ GAYIŞ v${version}`) && app.includes(`version:"${version}"`));
 
 const requiredInputs = [
   'k26FillOn', 'k26Fill',
