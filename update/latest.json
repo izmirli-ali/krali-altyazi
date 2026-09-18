@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.27",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.27_OTA_FINAL.zip",
-  "sha256": "d490acc0cb8ec3e3df7d216a047762ef16097be557207ad0bdd9dadab93d59ce",
-  "notes": "Akıllı Böl tek-kontrol akışına alındı; metin kartları sadeleştirildi."
+  "version": "6.6.28",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.28_OTA_FINAL.zip",
+  "sha256": "b9d979637212ffa5f274f79ec75d547b9a4fe7afe24d51005c8f7f5ddc930824",
+  "notes": "Altyazı zamanlama ve Premiere yazımı, test edilen stabil v6.6.23 davranışına geri alındı."
 }
