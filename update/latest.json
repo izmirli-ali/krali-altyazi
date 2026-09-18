@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.19",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.19_OTA_FINAL.zip",
-  "sha256": "987aa9d430efe6faa8deca8b75370f07da3ed49c3f5b0f5b8c105c0496da5f4f",
-  "notes": "Sessizlik Kes artık bağımsız çalışma alanı olarak açılır; JSON kesim aktarımı düzeltildi, kesim aralığı ve manuel dB kontrolleri eklendi."
+  "version": "6.6.20",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.20_OTA_FINAL.zip",
+  "sha256": "b6687d5ea0512398cbf4592ce197e21e17c441bc44ebfaae2d11373d702ded66",
+  "notes": "Sessizlik Kes v3.2 kaynak projesi, tüm çalışan arayüz ve motoru korunarak ayrı bir menü çalışma alanı olarak eklendi."
 }

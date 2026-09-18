@@ -31,8 +31,9 @@ const html = read(`${root}index.html`);
 const css = read(`${root}style.css`);
 const app = read(`${root}js/app.js`);
 const host = read(`${root}jsx/host.jsx`);
-const silenceJS = read(`${root}js/modules/silence-cut.js`);
-const silenceHost = read(`${root}jsx/modules/silence-cut.jsx`);
+const silenceShell = read(`${root}js/modules/silence-cut.js`);
+const silenceApp = read(`${root}modules/silence-cut/js/app.js`);
+const silenceHost = read(`${root}modules/silence-cut/jsx/host.jsx`);
 
 expect('package identity', !!version && html.includes(`KRALİ - ALTYAZI v${version}`) && app.includes(`version:"${version}"`));
 
@@ -78,12 +79,12 @@ expect('timeline user-clip safety guard',
   v50writer.includes('Güvenlik için işlem durduruldu') &&
   v50writer.indexOf('Güvenlik için işlem durduruldu') < v50writer.indexOf('slot.track.clips[i].remove(false,false)')
 );
-expect('isolated Silence Cut module has source-sequence safety lock',
-  silenceJS.includes('kraliSilenceWorkspace') &&
-  silenceHost.includes('M.makeSafeCopy=function()') &&
-  silenceHost.includes('Güvenlik kilidi: yalnızca bu işlem için oluşturulan') &&
-  silenceHost.includes('JSON.parse(cutsJSON)') &&
-  host.includes('loadSilenceCutModule=function()')
+expect('full isolated Silence Cut source module preserved',
+  silenceShell.includes('kraliSilenceFrame') &&
+  silenceShell.includes('modules/silence-cut/index.html') &&
+  silenceApp.includes('function playCutPreview()') &&
+  silenceApp.includes('function drawDetail()') &&
+  silenceHost.includes('$._AUTOCUT.applyCuts = function')
 );
 expect('ASR export preserved', host.includes('exportAsMediaDirect') && app.includes('whisper-cli'));
 
