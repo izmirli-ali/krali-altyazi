@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.29",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.29_OTA_FINAL.zip",
-  "sha256": "4a7fca37a5c3a6718f6e6e8c8794cf6e67bc78ab238e7cd1fcf68884c6cb675c",
-  "notes": "Akıllı Böl düzeltildi; altyazı zamanları sequence mix yerine gerçek timeline kliplerine bağlandı."
+  "version": "6.6.30",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.30_OTA_FINAL.zip",
+  "sha256": "d14c84353181ef1bb5c57398a8ec108334858a915c958c8f1abcdd360ccb3bd4",
+  "notes": "Metin algılama çalışan sequence-mix yoluna geri alındı; Akıllı Böl düzeltmesi korundu."
 }
