@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.33",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.33_OTA_FINAL.zip",
-  "sha256": "86b625e2e673bd0eb8d583085c46ac9542ef38c880a9ab2505ea8d1cfaf94ee4",
-  "notes": "Kelime zamanları, export edilen ses süresine göre Premiere timeline aralığına hizalanır."
+  "version": "6.6.34",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.34_OTA_FINAL.zip",
+  "sha256": "f4084859f04854442886bd314b0bbc990e11a454ac40ee09c6a10e5f388be213",
+  "notes": "Zaman hizalamasında ses track’inin ilk klibinden sabit başlangıç kaydırması türetilmez."
 }
