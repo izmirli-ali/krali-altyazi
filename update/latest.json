@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.22",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.22_OTA_FINAL.zip",
-  "sha256": "b894fbbda2896b1ff31b1c854c8a6f551cd041c3b0cbf44fa114404849b84889",
-  "notes": "Eklentinin görünen adı KRALİ GAYIŞ olarak yenilendi; mevcut altyazı projeleriyle uyumluluk korundu."
+  "version": "6.6.23",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.23_OTA_FINAL.zip",
+  "sha256": "a6d5f5cb2c9a6c78e1d0ed69cbb3294b71f1b3db24dd23578c34cb464305a195",
+  "notes": "Sessizlik Kes, kendi yalıtılmış host motoruna bağlanacak şekilde düzeltildi."
 }
