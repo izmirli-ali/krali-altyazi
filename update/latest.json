@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.17",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.17_OTA_FINAL.zip",
-  "sha256": "480d62a90bef6c535fb12356c0f1b831f5d1d120c539c657273777becab9ba89",
-  "notes": "Kalite & Teslim merkezi eklendi: kalite raporu, VTT/TXT/CSV çıktıları, taşınabilir proje paketi ve font doğrulaması."
+  "version": "6.6.18",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_ALTYAZI_v6.6.18_OTA_FINAL.zip",
+  "sha256": "8442eef9836866d26d347b1fe32e69fab70e9737563aa470486684155856e89d",
+  "notes": "Altyazı sisteminden izole Sessizlik Kes modülü eklendi: yerel ses analizi, kesim planı ve yalnızca güvenli KRALI sequence kopyasında ripple kesim."
 }
