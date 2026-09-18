@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.25",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.25_OTA_FINAL.zip",
-  "sha256": "f23047eda5490717812fd391b9b02e6b221cda89b909d9df748fb8692c7ce854",
-  "notes": "Altyazı düzenleme arayüzü sadeleştirildi; Altyazı Stili bağımsız ve görünür bir menüye taşındı."
+  "version": "6.6.26",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.26_OTA_FINAL.zip",
+  "sha256": "5c8545de40acc374bc35f3b21f3a0cdf6e532f38c9eb00270773d9d085646fca",
+  "notes": "Altyazı zamanları seçili ses track’ine sınırlandı ve Premiere yazımı frame hassasiyetine sabitlendi."
 }
