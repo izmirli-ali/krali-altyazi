@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.36",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.36_OTA_FINAL.zip",
-  "sha256": "4ed14c0aded12f15e39f9dc412a654ce7d2eea9ea2bcebeeb6127791d4e73efd",
-  "notes": "Altyazılar, Kelimeye Git ve Akıllı Böl çalışma alanı v6.6.23 tasarımına döndürüldü."
+  "version": "6.6.37",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.37_OTA_FINAL.zip",
+  "sha256": "ba7a6199e769484f2b1b7f5309c9f46083c5f0a1ebcebb79faae6e2a6e8e7798",
+  "notes": "Altyazı kelime zamanları, her ses klibinin gerçek Premiere timeline konumuna eşlenir; klip okunamazsa güvenli sequence-mix yedeği korunur."
 }
