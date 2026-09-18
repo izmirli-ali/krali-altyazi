@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.35",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.35_OTA_FINAL.zip",
-  "sha256": "d72f295c9d7e9b816847f68de57339b45e2ed71cc1895256be1a1d92c598a2b4",
-  "notes": "Altyazı üretim ve zamanlama motoru v6.6.23 stabil davranışına döndürüldü; stil modülleri korundu."
+  "version": "6.6.36",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.36_OTA_FINAL.zip",
+  "sha256": "4ed14c0aded12f15e39f9dc412a654ce7d2eea9ea2bcebeeb6127791d4e73efd",
+  "notes": "Altyazılar, Kelimeye Git ve Akıllı Böl çalışma alanı v6.6.23 tasarımına döndürüldü."
 }
