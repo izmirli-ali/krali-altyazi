@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.37",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.37_OTA_FINAL.zip",
-  "sha256": "ba7a6199e769484f2b1b7f5309c9f46083c5f0a1ebcebb79faae6e2a6e8e7798",
-  "notes": "Altyazı kelime zamanları, her ses klibinin gerçek Premiere timeline konumuna eşlenir; klip okunamazsa güvenli sequence-mix yedeği korunur."
+  "version": "6.6.38",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.38_STABLE_RESTORE.zip",
+  "sha256": "8b3fe93f8cb47562f693f1c3407300b1d957a449108be53c301a8a915d0afece",
+  "notes": "v6.6.23 güvenilir altyazı ve senkron motoruna tam geri dönüş. Sonraki geliştirmeler bu temel üzerinde ayrı ayrı eklenecek."
 }
