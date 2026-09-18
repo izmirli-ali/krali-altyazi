@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.32",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.32_OTA_FINAL.zip",
-  "sha256": "4b05a5550940b299775493c4d0b5e75bf258d6ec1c7c1e8b8134a58ebedabd0b",
-  "notes": "Akıllı Böl, eski kapalı modülden bağımsız olarak güncel altyazı listesinde çalışır."
+  "version": "6.6.33",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.33_OTA_FINAL.zip",
+  "sha256": "86b625e2e673bd0eb8d583085c46ac9542ef38c880a9ab2505ea8d1cfaf94ee4",
+  "notes": "Kelime zamanları, export edilen ses süresine göre Premiere timeline aralığına hizalanır."
 }
