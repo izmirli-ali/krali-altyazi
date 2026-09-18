@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.24",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.24_OTA_FINAL.zip",
-  "sha256": "7e213fbc73196ddd8e46b4f14c97bb1b4d562edb0ff43ec63efd1b52ceb1cd07",
-  "notes": "Altyazı Stili animasyonları ile Sessizlik Kes güvenlik, profil ve işlem raporu kontrolleri eklendi."
+  "version": "6.6.25",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.25_OTA_FINAL.zip",
+  "sha256": "f23047eda5490717812fd391b9b02e6b221cda89b909d9df748fb8692c7ce854",
+  "notes": "Altyazı düzenleme arayüzü sadeleştirildi; Altyazı Stili bağımsız ve görünür bir menüye taşındı."
 }
