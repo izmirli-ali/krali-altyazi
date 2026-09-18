@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.30",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.30_OTA_FINAL.zip",
-  "sha256": "d14c84353181ef1bb5c57398a8ec108334858a915c958c8f1abcdd360ccb3bd4",
-  "notes": "Metin algılama çalışan sequence-mix yoluna geri alındı; Akıllı Böl düzeltmesi korundu."
+  "version": "6.6.31",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.31_OTA_FINAL.zip",
+  "sha256": "271cfbfcf78172f9784a32203604ab45f5f8cab5c5b95200bd3c23c12cb4f92e",
+  "notes": "Akıllı Böl profilleri tek tıkla bütün kilitsiz metinleri yeniden gruplar."
 }
