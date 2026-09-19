@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.42",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.42_DTW_ALIGNMENT.zip",
-  "sha256": "6e04950afc0101080196a059a7cffbe8623be4372304d298dd1f7fc4f07e8f86",
-  "notes": "Kelime zamanları artık Whisper DTW zorunlu ses hizalamasıyla üretilir; yaklaşık token zamanı ve eşit süre bölme kullanılmaz."
+  "version": "6.6.43",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.43_CUE_DELIVERY.zip",
+  "sha256": "8bbcb61a4ad3a20eae7743b62bd8e65c8ade2b125d2d92a7c48325ba37829d63",
+  "notes": "Sol listedeki her altyazı kartı timeline öğesi olarak yazılır ve tek tek doğrulanır. Kelime Zamanı Demo bölümü kaldırıldı."
 }
