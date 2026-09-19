@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.40",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.40_SPEECH_CLOCK.zip",
-  "sha256": "29e0c5ad01b48397a368862ef07fc541efcfd2ae8bd86ccd15f25603b52fd37d",
-  "notes": "Tek parça kayıtlar ve kesilmiş timeline klipleri için sessizlik-korumalı altyazı saati: atlanan iç sessizlikler gerektiğinde kelime zamanlarına geri eklenir."
+  "version": "6.6.41",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.41_WORD_TIMING.zip",
+  "sha256": "6347a18336a28ddd55b8099979b51db3b5be7eb29b3afe73e762c66d031e1695",
+  "notes": "Kelime-zamanı demo sürümü: yalnızca doğrulanmış Whisper kelime zamanları kullanılır; parça süresini kelimelere eşit bölme kapatıldı."
 }
