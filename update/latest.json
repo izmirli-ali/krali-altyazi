@@ -1,8 +1,8 @@
 {
   "channel": "stable",
   "enabled": true,
-  "version": "6.6.43",
-  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.43_CUE_DELIVERY.zip",
-  "sha256": "8bbcb61a4ad3a20eae7743b62bd8e65c8ade2b125d2d92a7c48325ba37829d63",
-  "notes": "Sol listedeki her altyazı kartı timeline öğesi olarak yazılır ve tek tek doğrulanır. Kelime Zamanı Demo bölümü kaldırıldı."
+  "version": "6.6.44",
+  "url": "https://raw.githubusercontent.com/izmirli-ali/krali-altyazi/main/KRALI_GAYIS_v6.6.44_CLEAN_EDITOR.zip",
+  "sha256": "c30fe64c300c20ccb79df32485cdc9c8d155c83236e213045de1a51c887b3e79",
+  "notes": "Otomatik gruplama dışındaki Akıllı Bölme arayüzü kaldırıldı. Metin kartları sadeleştirildi; sonrakiyle birleştirme kart üzerinde ikon olarak sunulur."
 }
